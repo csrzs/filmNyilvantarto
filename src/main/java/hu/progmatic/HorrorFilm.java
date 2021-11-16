@@ -20,7 +20,6 @@ final public class HorrorFilm extends Film {
 
 // GETTEREK, SETTEREK ----------------------------------------------------------------------------------
 
-
   public boolean isVoltBenneSzellem() {
     return voltBenneSzellem;
   }
@@ -46,7 +45,5 @@ final public class HorrorFilm extends Film {
     }
     return 0;
   }
-
-
 }
 
