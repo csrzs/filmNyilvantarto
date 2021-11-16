@@ -112,4 +112,17 @@ public class Film {
   final public void setKoltsegvetes(int koltsegvetes) {
     this.koltsegvetes = koltsegvetes;
   }
+
+  // OVERRIDEOK ----------------------------------------------------------------------------------------
+
+  @Override
+  public String toString() {
+    return  "Nyilvántartási szám: " + nyilvantartasiSzam + "\n"
+            + "Cím: " + cim + "\n"
+            + "Kiadás éve: " + kiadasiEv + "\n"
+            + "Műfaj:" + mufaj + "\n"
+            + "Hossz (mp): " + hossz + "\n"
+            + "Költségvetés: " + koltsegvetes + "\n"
+            + "Műfajértékelés: " + mufajertekeles;
+  }
 }

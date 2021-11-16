@@ -4,7 +4,7 @@ final public class HorrorFilm extends Film {
   private boolean voltBenneSzellem;
   private boolean voltBenneSzornyeteg;
 
-  // KONSTRUKTOROK ---------------------------------------------------------------------------------------
+  // KONSTRUKTOROK -------------------------------------------------------------------------------------
 
   public HorrorFilm(String nyilvantartasiSzam) {
     super(nyilvantartasiSzam);
@@ -35,6 +35,8 @@ final public class HorrorFilm extends Film {
   public void setVoltBenneSzornyeteg(boolean voltBenneSzornyeteg) {
     this.voltBenneSzornyeteg = voltBenneSzornyeteg;
   }
+
+  // OVERRIDEOK ----------------------------------------------------------------------------------------
 
   @Override
   public int getMufajErtekeles() {

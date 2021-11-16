@@ -3,7 +3,7 @@ package hu.progmatic;
 final public class RomantikusFilm extends Film {
   private int hazassagokSzama;
 
-  // KONSTRUKTOROK ---------------------------------------------------------------------------------------
+  // KONSTRUKTOROK -------------------------------------------------------------------------------------
 
   public RomantikusFilm(String nyilvantartasiSzam) {
     super(nyilvantartasiSzam);
@@ -26,6 +26,8 @@ final public class RomantikusFilm extends Film {
   public void setHazassagokSzama(int hazassagokSzama) {
     this.hazassagokSzama = hazassagokSzama;
   }
+
+  // OVERRIDEOK ----------------------------------------------------------------------------------------
 
   @Override
   public int getMufajErtekeles() {

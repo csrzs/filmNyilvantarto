@@ -3,7 +3,7 @@ package hu.progmatic;
 final public class WesternFilm extends Film {
   private boolean voltakBenneIndianok;
 
-  // KONSTRUKTOROK ---------------------------------------------------------------------------------------
+  // KONSTRUKTOROK -------------------------------------------------------------------------------------
 
   public WesternFilm(String nyilvantartasiSzam) {
     super(nyilvantartasiSzam);
@@ -27,6 +27,8 @@ final public class WesternFilm extends Film {
   public void setVoltakBenneIndianok(boolean voltakBenneIndianok) {
     this.voltakBenneIndianok = voltakBenneIndianok;
   }
+
+  // OVERRIDEOK ----------------------------------------------------------------------------------------
 
   @Override
   public int getMufajErtekeles() {
