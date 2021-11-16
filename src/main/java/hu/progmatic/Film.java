@@ -7,6 +7,7 @@ public class Film {
   private String mufaj = "idk";
   private int hossz;
   private int koltsegvetes;
+  private int mufajertekeles;
 
 // KONSTRUKTOROK ---------------------------------------------------------------------------------------
 
@@ -37,11 +38,11 @@ public class Film {
 
 // GETTEREK, SETTEREK ----------------------------------------------------------------------------------
 
-  final public int getErtekeles() {
-    return getKoltsegvetesiKategoria() + getMufajErtekeles();
+  final public int getErtekeles(Film input) {
+    return getKoltsegvetesiKategoria() + input.getMufajErtekeles();
   }
 
-  public final int getMufajErtekeles() {
+  public int getMufajErtekeles() {
     return 0;
   }
 
