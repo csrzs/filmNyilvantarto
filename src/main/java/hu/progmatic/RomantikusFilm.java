@@ -36,4 +36,10 @@ final public class RomantikusFilm extends Film {
     }
     return hazassagokSzama;
   }
+
+  @Override
+  public String toString() {
+    return super.toString()
+            + "Műfajértékelés: " + getMufajErtekeles() + "\n";
+  }
 }

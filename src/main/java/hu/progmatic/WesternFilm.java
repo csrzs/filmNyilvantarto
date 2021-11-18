@@ -37,4 +37,10 @@ final public class WesternFilm extends Film {
     }
     return 0;
   }
+
+  @Override
+  public String toString() {
+    return super.toString()
+            + "Műfajértékelés: " + getMufajErtekeles() + "\n";
+  }
 }

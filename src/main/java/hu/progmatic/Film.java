@@ -123,6 +123,6 @@ public class Film {
             + "Műfaj:" + mufaj + "\n"
             + "Hossz (mp): " + hossz + "\n"
             + "Költségvetés: " + koltsegvetes + "\n"
-            + "Műfajértékelés: " + mufajertekeles;
+            + "Műfajértékelés: " + mufajertekeles + "\n";
   }
 }

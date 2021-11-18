@@ -47,5 +47,11 @@ final public class HorrorFilm extends Film {
     }
     return 0;
   }
+
+  @Override
+  public String toString() {
+    return super.toString()
+            + "Műfajértékelés: " + getMufajErtekeles() + "\n";
+  }
 }
 
