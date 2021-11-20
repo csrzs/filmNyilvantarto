@@ -56,4 +56,3 @@ final public class HorrorFilm extends Film {
             + "Műfajértékelés: " + getMufajErtekeles() + "\n";
   }
 }
-
