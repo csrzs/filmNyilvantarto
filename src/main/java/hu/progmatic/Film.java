@@ -122,6 +122,7 @@ public class Film {
             + "Kiadás éve: " + kiadasiEv + "\n"
             + "Műfaj: " + mufaj + "\n"
             + "Hossz (mp): " + hossz + "\n"
+            + "Filmkockák száma: " + getFilmkockak() + "\n"
             + "Költségvetés: " + koltsegvetes + "\n"
             + "Értékelés: " + getErtekeles() + "\n"
             + "Költségvetési kategória: " + getKoltsegvetesiKategoria() + "\n";
