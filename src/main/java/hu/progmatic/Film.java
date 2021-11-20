@@ -4,7 +4,7 @@ public class Film {
   private final String nyilvantartasiSzam;
   private String cim;
   private int kiadasiEv;
-  private String mufaj = "idk";
+  private String mufaj;
   private int hossz;
   private int koltsegvetes;
   private int mufajertekeles;
@@ -32,14 +32,14 @@ public class Film {
     this.koltsegvetes = koltsegvetes;
 
     if (mufaj == null || mufaj.equals("")) {
-      mufaj = "idk";
+      this.mufaj = "idk";
     }
   }
 
 // GETTEREK, SETTEREK ----------------------------------------------------------------------------------
 
-  final public int getErtekeles(Film input) {
-    return getKoltsegvetesiKategoria() + input.getMufajErtekeles();
+  final public int getErtekeles() {
+    return getKoltsegvetesiKategoria() + getMufajErtekeles();
   }
 
   public int getMufajErtekeles() {
@@ -93,7 +93,7 @@ public class Film {
     this.mufaj = mufaj;
 
     if (mufaj == null || mufaj.equals("")) {
-      mufaj = "idk";
+      this.mufaj = "idk";
     }
   }
 
@@ -117,12 +117,14 @@ public class Film {
 
   @Override
   public String toString() {
-    return  "Nyilvántartási szám: " + nyilvantartasiSzam + "\n"
+    return "Nyilvántartási szám: " + nyilvantartasiSzam + "\n"
             + "Cím: " + cim + "\n"
             + "Kiadás éve: " + kiadasiEv + "\n"
-            + "Műfaj:" + mufaj + "\n"
+            + "Műfaj: " + mufaj + "\n"
             + "Hossz (mp): " + hossz + "\n"
             + "Költségvetés: " + koltsegvetes + "\n"
-            + "Műfajértékelés: " + mufajertekeles + "\n";
+            + "Értékelés: " + getErtekeles() + "\n"
+            + "Költségvetési kategória: " + getKoltsegvetesiKategoria() + "\n";
+
   }
 }

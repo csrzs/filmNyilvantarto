@@ -34,7 +34,6 @@ public class Videoteka {
 
   public int getElsoSzabadHelyIndex() {
     int output = 0;
-
     for (Film index : getKazettaJegyzek()) {
       if (index == null) {
         return output;
@@ -51,7 +50,78 @@ public class Videoteka {
     kazettaJegyzek[getElsoSzabadHelyIndex()] = input;
   }
 
+  public void addArrayOfFilms(Film[] input) {
+    if (!(input.length > getSzabadHelyekSzama())) {
+      for (Film elem : input) {
+        kazettaJegyzek[getElsoSzabadHelyIndex()] = elem;
+      }
+    } else {
+      throw new RuntimeException("Importálandó filmek mennyisége több mint a szabad helyek száma!");
+    }
+  }
+
   public void deleteFilm(int input) {
     kazettaJegyzek[input] = null;
+  }
+
+  public void listaz() {
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem != null) {
+        System.out.println(elem);
+      } else {
+        System.out.println("Index Null: üres hely!");
+      }
+    }
+    System.out.println();
+  }
+
+  public void filmekMufajSzerint(String mufaj) {
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem != null) {
+        if (elem.getMufaj().equals(mufaj)) {
+          System.out.println(elem);
+        }
+      }
+    }
+  }
+
+  public void filmekEvszamSzerint(int evszam) {
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem != null) {
+        if (elem.getKiadasiEv() == evszam) {
+          System.out.println(elem);
+        }
+      }
+    }
+  }
+
+  public void filmekErtekelesSzerint(int minErtekeles) {
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem != null) {
+        if (elem.getErtekeles() >= minErtekeles) {
+          System.out.println(elem);
+        }
+      }
+    }
+  }
+
+  public void szellemesFilmek() {
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem instanceof HorrorFilm) {
+        if (((HorrorFilm) elem).isVoltBenneSzellem()) {
+          System.out.println(elem);
+        }
+      }
+    }
+  }
+
+  public void hazassagokSzama() {
+    int output = 0;
+    for (Film elem : getKazettaJegyzek()) {
+      if (elem instanceof RomantikusFilm) {
+        output += ((RomantikusFilm) elem).getHazassagokSzama();
+      }
+    }
+    System.out.println(output);
   }
 }

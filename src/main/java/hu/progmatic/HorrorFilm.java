@@ -40,12 +40,14 @@ final public class HorrorFilm extends Film {
 
   @Override
   public int getMufajErtekeles() {
+    int output = 0;
     if (isVoltBenneSzellem()) {
-      return 2;
-    } else if (isVoltBenneSzornyeteg()) {
-      return 3;
+      output += 2;
     }
-    return 0;
+    if (isVoltBenneSzornyeteg()) {
+      output += 3;
+    }
+    return output;
   }
 
   @Override
