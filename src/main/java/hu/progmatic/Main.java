@@ -3,7 +3,19 @@ package hu.progmatic;
 public class Main {
   public static void main(String[] args) {
     Videoteka mainVideoteka = tesztAdatok();
+
+    System.out.println("--- ÖSSZES FILM ---");
     mainVideoteka.listaz();
+    System.out.println("--- SZELLEMES FILMEK ---");
+    mainVideoteka.szellemesFilmek();
+    System.out.println("--- HÁZASSÁGOK SZÁMA ---");
+    mainVideoteka.hazassagokSzama();
+    System.out.println("--- FILMEK ÉVSZÁM SZERINT ---");
+    mainVideoteka.filmekEvszamSzerint(2017);
+    System.out.println("--- FILMEK ÉRTÉKELÉS SZERINT ---");
+    mainVideoteka.filmekErtekelesSzerint(5);
+    System.out.println("--- ROMANTIKUS FILMEK ---");
+    mainVideoteka.filmekMufajSzerint("Romantikus");
   }
 
   public static Videoteka tesztAdatok() {

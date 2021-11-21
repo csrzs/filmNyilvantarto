@@ -72,7 +72,6 @@ public class Videoteka {
         System.out.println("Index Null: üres hely!");
       }
     }
-    System.out.println();
   }
 
   public void filmekMufajSzerint(String mufaj) {
