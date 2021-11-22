@@ -51,9 +51,11 @@ public class Main {
     ((HorrorFilm)kazettaJegyzek[1]).setVoltBenneSzornyeteg(true);
     ((HorrorFilm)kazettaJegyzek[2]).setVoltBenneSzornyeteg(true);
     ((HorrorFilm)kazettaJegyzek[3]).setVoltBenneSzornyeteg(true);
+
     ((RomantikusFilm)kazettaJegyzek[4]).setHazassagokSzama(1);
     ((RomantikusFilm)kazettaJegyzek[5]).setHazassagokSzama(2);
     ((RomantikusFilm)kazettaJegyzek[6]).setHazassagokSzama(10);
+
     ((WesternFilm)kazettaJegyzek[7]).setVoltakBenneIndianok(true);
     ((WesternFilm)kazettaJegyzek[8]).setVoltakBenneIndianok(true);
 
