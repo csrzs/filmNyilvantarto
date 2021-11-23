@@ -4,7 +4,7 @@ public class Film {
   private final String nyilvantartasiSzam;
   private String cim;
   private int kiadasiEv;
-  private String mufaj = "idk";
+  private String mufaj;
   private int hossz;
   private int koltsegvetes;
   private int mufajertekeles;
@@ -27,13 +27,9 @@ public class Film {
     this.nyilvantartasiSzam = nyilvantartasiSzam;
     this.cim = cim;
     this.kiadasiEv = kiadasiEv;
-    this.mufaj = mufaj;
+    setMufaj(mufaj);
     this.hossz = hossz;
     this.koltsegvetes = koltsegvetes;
-
-    if (mufaj == null || mufaj.equals("")) {
-      this.mufaj = "idk";
-    }
   }
 
 // GETTEREK, SETTEREK ----------------------------------------------------------------------------------
