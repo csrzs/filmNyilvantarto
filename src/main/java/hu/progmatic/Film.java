@@ -4,7 +4,7 @@ public class Film {
   private final String nyilvantartasiSzam;
   private String cim;
   private int kiadasiEv;
-  private String mufaj;
+  private String mufaj ="idk";
   private int hossz;
   private int koltsegvetes;
   private int mufajertekeles;
